@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="txtFirstButton">Clicker</string>
+  <string name="txtSecondButton">Location</string>
+  <string name="app_name">DemoXamarin.Android</string>
+</resources>
