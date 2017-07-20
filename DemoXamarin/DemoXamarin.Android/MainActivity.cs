@@ -16,7 +16,8 @@ namespace DemoXamarin.Droid
 	[Activity (Label = "DemoXamarin.Android", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity, ILocationListener
 	{
-		int count = 1;
+        string TAG = "DemoXamarin";
+        int count = 1;
         Location _currentLocation;
         LocationManager _locationManager;
         string _locationProvider;
@@ -85,16 +86,18 @@ namespace DemoXamarin.Droid
         public void OnProviderDisabled(string provider)
         {
             //throw new NotImplementedException();
+            Log.Debug(TAG, "Enter OnProviderDisabled, provider :{0} " + provider);
         }
 
         public void OnProviderEnabled(string provider)
         {
-            //throw new NotImplementedException();
+            Log.Debug(TAG, "Enter OnProviderEnabled, provider :{0} " + provider);
         }
 
         public void OnStatusChanged(string provider, [GeneratedEnum] Availability status, Bundle extras)
         {
             //throw new NotImplementedException();
+            Log.Debug(TAG, "Enter OnStatusChanged, provider :{0} " + provider); 
         }
 
     }
